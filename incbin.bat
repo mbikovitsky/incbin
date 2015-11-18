@@ -66,7 +66,7 @@ While Not ts.atEndOfStream
 	Else
 		outf.Write(",")
 	End If
-    byteval = AscB(ts.Read(1))
+    byteval = Asc(ts.Read(1))
     hexstr = Hex(byteval)
     If byteval < 16 Then hexstr = "0" & hexstr
     outf.Write("0x" & hexstr)
